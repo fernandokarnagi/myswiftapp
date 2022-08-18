@@ -19,5 +19,33 @@ platform :ios do
   desc "Description of what the lane does"
   lane :custom_lane do
     # add actions here: https://docs.fastlane.tools/actions
+    sh("ls", "-la")
+  end
+  
+  lane :build do
+    # add actions here: https://docs.fastlane.tools/action
+    xcclean
+    xcodebuild(
+  		archive: true,
+  		archive_path: "./fernando.xcarchive",
+ 		scheme: "MySwiftApp",
+ 		sdk: "iphoneos"
+	)
+  end
+  
+  lane :archive do
+    # add actions here: https://docs.fastlane.tools/action
+    # xcarchive(scheme: "MySwiftApp", sdk: "iphoneos", archive_path: "fernando.xcarchive")
+    xcodebuild(
+  		archive: false,
+  		export_archive: true,
+  		archive_path: "./fernando.xcarchive",
+  		export_options_plist: "./ExportOptions.plist",
+ 		export_path: "./fernando.ipa"
+	)
   end
 end
+
+
+# xcodebuild archive -scheme MySwiftApp -sdk iphoneos -allowProvisioningUpdates -archivePath fernando.xcarchive
+# xcodebuild -exportArchive -archivePath fernando.xcarchive  -exportOptionsPlist exportOptions.plist -exportPath /Users/fernandokarnagi/Downloads/myapp

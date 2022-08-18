@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MySwiftApp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>9EBC9537F387963142E827F6B69A20CC13F6E486</string>
+				<key>dateExpires</key>
+				<string>16/8/23</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>JB94G7BFXZ.monster.karnagi.devops.MySwiftApp</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>JB94G7BFXZ</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>MySwiftApp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>1a91beac-ca7c-4ba1-8091-e6e907ae24ec</string>
+				<key>dateExpires</key>
+				<string>16/8/23</string>
+				<key>name</key>
+				<string>MySwiftAppDevelopment</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>JB94G7BFXZ</string>
+				<key>name</key>
+				<string></string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>
